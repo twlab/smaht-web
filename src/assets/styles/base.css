@@ -59,3 +59,16 @@
 [data-aw-toggle-menu].expanded g > path:last-child {
   @apply rotate-45 translate-y-[-8px] translate-x-[14px];
 }
+
+
+
+#logo {
+  background-image: url(/images/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.dark #logo {
+  background-image: url(/images/logo-w.png);
+}

@@ -1,15 +1,15 @@
-import defaultImage from './assets/images/default.png';
+import defaultImage from './assets/images/SMaHT_nih.png';
 
 const CONFIG = {
-  name: 'AstroWind',
+  name: 'SMaHT',
 
-  origin: 'https://astrowind.vercel.app',
+  origin: 'https://smaht.org',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'AstroWind — Free template for create a website with Astro + Tailwind CSS',
+  title: 'Somatic Mosaicism Across Human Tissues (SMaHT)',
   description:
-    '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
+    'The Somatic Mosaicism across Human Tissues (SMaHT) Network aims to transform our understanding of how somatic mosaicism in human cells influences biology and disease.',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
@@ -24,7 +24,7 @@ const CONFIG = {
     timeZone: 'UTC',
   }),
 
-  googleAnalyticsId: false, // or "G-XXXXXXXXXX",
+  googleAnalyticsId: 'G-57DZQBDCV6', // or "G-XXXXXXXXXX",
   googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
 
   blog: {
