@@ -5,18 +5,18 @@ export const headerData = {
     {
       text: 'About',
       links: [
+        // {
+        //   text: 'NIH SMaHT Program',
+        //   href: 'https://commonfund.nih.gov/smaht',
+        //   external: true,
+        // },
         {
           text: 'Program Overview',
-          href: 'https://commonfund.nih.gov/smaht',
-          external: true,
+          href: getPermalink('/overview'),
         },
         {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
+          text: 'Policies',
+          href: getPermalink('/policies'),
         },
       ],
     },
@@ -25,12 +25,12 @@ export const headerData = {
       links: [
         {
           text: 'Awardees',
-          href: '#',
+          href: getPermalink('/awardees'),
         },
-        {
-          text: 'Centers',
-          href: '#',
-        },
+        // {
+        //   text: 'Centers',
+        //   href: '#',
+        // },
       ],
     },
     {
@@ -38,17 +38,17 @@ export const headerData = {
       links: [
         {
           text: 'SMaHT Publications',
-          href: '#',
+          href: getPermalink('/publications'),
         },
         {
           text: 'SMaHT Preprints',
-          href: '#',
+          href: getPermalink('/preprints'),
         },
       ],
     },
     {
-      text: 'Outreach',
-      href: '#',
+      text: 'News',
+      href: getPermalink('/news'),
     },
     {
       text: 'Wiki',
@@ -56,7 +56,7 @@ export const headerData = {
       external: true,
     },
   ],
-  actions: [{ type: 'button', text: 'Data portal', href: getPermalink('/data') }],
+  actions: [{ type: 'button', text: 'Data Portal', href: 'https://data.smaht.org/' }],
 };
 
 export const footerData = {
@@ -65,22 +65,22 @@ export const footerData = {
       title: 'Support',
       links: [
         { text: 'Internal Wiki', href: 'https://wiki.smaht.org/' },
-        { text: 'Slack', href: '#' },
+        // { text: 'X', href: 'https://twitter.com/SMaHTnetwork' },
       ],
     },
     {
       title: 'Program',
-      links: [{ text: 'About', href: '#' }],
+      links: [{ text: 'Overview', href: getPermalink('/overview') }],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    // { text: 'Terms', href: getPermalink('/terms') },
+    { text: 'Policies', href: getPermalink('/policies') },
   ],
   socialLinks: [
-    { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
+    { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: 'https://twitter.com/SMaHTnetwork' },
+    // { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
+    // { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     // { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `

@@ -6,7 +6,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
-
+import { YouTube } from '@astro-community/astro-embed-youtube';
 const meta = {
   title: SITE.title,
   description: SITE.description,
@@ -27,6 +27,9 @@ const meta = {
     <Fragment slot="subtitle">
       The <span class="font-semibold">Somatic Mosaicism across Human Tissues (SMaHT)</span> Network aims to transform our
       understanding of how somatic mosaicism in human cells influences biology and disease.
+      <div class="m-auto w-full">
+        <YouTube id="8KX3lkMB5nU" />
+      </div>
     </Fragment>
   </Hero>
 
@@ -90,10 +93,6 @@ const meta = {
           'This initiative consists of Data Analysis Centers and an Organizational Center. The Data Analysis Centers will ensure that the somatic variant catalog is accessible, high-quality, and interoperable. The Organizational Center will coordinate the program’s activities and provide outreach to the research community.',
       },
     ]}
-    image={{
-      src: import('~/assets/images/smaht-network2.png'),
-      alt: 'SMaHT Network',
-    }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Organizations</h3>

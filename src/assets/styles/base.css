@@ -65,10 +65,14 @@
 #logo {
   background-image: url(/images/logo.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
 }
 
 .dark #logo {
   background-image: url(/images/logo-w.png);
 }
+
+/* .lite-youtube {
+  margin: auto !important;
+} */
