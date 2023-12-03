@@ -17,7 +17,7 @@ const meta = {
 <Layout {meta}>
   <!-- Hero Widget ******************* -->
 
-  <Hero image={{ src: import('~/assets/images/smaht-network.png'), alt: 'SMaHT Network' }}>
+  <!-- <Hero image={{ src: import('~/assets/images/smaht-network.png'), alt: 'SMaHT Network' }}>
     <Fragment slot="title">
       <span> Somatic Mosaicism Across Human Tissues</span>
       <br />
@@ -27,21 +27,49 @@ const meta = {
     <Fragment slot="subtitle">
       The <span class="font-semibold">Somatic Mosaicism across Human Tissues (SMaHT)</span> Network aims to transform our
       understanding of how somatic mosaicism in human cells influences biology and disease.
-      <div class="m-auto w-full">
-        <YouTube id="8KX3lkMB5nU" />
-      </div>
+      
     </Fragment>
-  </Hero>
+  </Hero> -->
+
+  <section class="scroll-mt-16">
+    <div class="px-4 py-4 mx-auto max-w-6xl lg:px-8 lg:py-8">
+      <div class="grid mx-auto space-y-6 md:grid-cols-2 md:space-y-0">
+        <div>
+          <h1 class="text-3xl py-4 font-bold">Welcome to the SMaHT Network!</h1>
+          <p class="text-lg">
+            The <a href="https://commonfund.nih.gov/smaht" target="_blank" class="text-blue-500 underline"
+              >Somatic Mosaicism Across Human Tissues <span class="text-accent dark:text-white highlight">(SMaHT)</span
+              ></a
+            >
+            is a new initiative sponsored by the National Institutes of Health, Office of Strategic Coordination - The Common
+            Fund. This initiative will investigate somatic variations: DNA changes that occur as our bodies develop, grow,
+            and age, and how these changes impact health and disease. For the first time, scientists will create a large-scale,
+            systematic catalog of somatic variation, providing an invaluable resource for the broader scientific community.
+          </p>
+        </div>
+        <div class="m-auto w-full">
+          <YouTube id="8KX3lkMB5nU" />
+          <p class="text-sm text-gray-500 text-right">
+            This video can be found on <a
+              href="https://commonfund.nih.gov/news-media/videos"
+              class="text-blue-500 underline"
+              target="_blank">the NIH website</a
+            >.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Note Widget ******************* -->
 
-  <Note />
+  <!-- <Note /> -->
 
   <!-- Features Widget *************** -->
 
   <Features
-    highlight="Key outcomes"
-    title="What you get from SMaHT"
+    highlight=""
+    title="Key Outcomes"
     subtitle=""
     items={[
       [
@@ -75,7 +103,7 @@ const meta = {
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     items={[
       {
         title: 'Somatic Variant Discovery',
@@ -98,5 +126,5 @@ const meta = {
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Organizations</h3>
       The SMaHT Network includes the following initiatives:
     </Fragment>
-  </Content>
+  </Content> -->
 </Layout>
