@@ -15,24 +15,24 @@ export const headerData = {
           href: getPermalink('/overview'),
         },
         {
-          text: 'Policies',
-          href: getPermalink('/policies'),
+          text: 'Awardees',
+          href: getPermalink('/awardees'),
         },
       ],
     },
     {
-      text: 'Overview',
-      links: [
-        {
-          text: 'Awardees',
-          href: getPermalink('/awardees'),
-        },
-        // {
-        //   text: 'Centers',
-        //   href: '#',
-        // },
-      ],
+      text: 'Policies',
+      href: getPermalink('/policies'),
     },
+    // {
+    //   text: 'Overview',
+    //   links: [
+    //     // {
+    //     //   text: 'Centers',
+    //     //   href: '#',
+    //     // },
+    //   ],
+    // },
     {
       text: 'Publications',
       links: [
