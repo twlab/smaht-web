@@ -196,7 +196,7 @@ The process for decision-making will be for the SMaHT Policy Working Group to wo
 
 ## VII\. Monitoring and Documentation
 
-The progress of the SMaHT Policy Working Group will be available on the SMaHT Policy Dashboard. Documentation for the SMaHT Policy Working Group can be found [here](https://drive.google.com/drive/folders/1hKyeTNtVqmIvxhIgl0WWqwfzzQxaLu8m?usp=sharing)<u>.</u>
+The progress of the SMaHT Policy Working Group will be available on the SMaHT Policy Dashboard. 
 
 ## VIII\. Continuous Improvement
 

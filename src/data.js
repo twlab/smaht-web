@@ -28,7 +28,7 @@ export const headerData = {
         { text: 'SMaHT Network Code of Conduct', href: getPermalink('code-of-conduct') },
         { text: 'Working Group Governance', href: getPermalink('/policy-working-group-governance') },
         { text: 'Data Use Policy', href: getPermalink('/data-use-policy') },
-        { text: 'Software Policy', href: getPermalink('/publication-policy') },
+        { text: 'Software Policy', href: getPermalink('/software-policy') },
         { text: 'Publication Policy', href: getPermalink('/publication-policy') },
       ],
     },
