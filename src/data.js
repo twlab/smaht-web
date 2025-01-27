@@ -46,7 +46,8 @@ export const headerData = {
       links: [
         {
           text: 'SMaHT Publications',
-          href: getPermalink('/publications'),
+          href: 'https://www.ncbi.nlm.nih.gov/sites/myncbi/16AVSwo5opQ9dK/collections/64677812/public/',
+          external: true,
         },
         {
           text: 'SMaHT Preprints',
@@ -57,6 +58,11 @@ export const headerData = {
     {
       text: 'News',
       href: getPermalink('/news'),
+    },
+    {
+      text: 'SMaHT Donor Families',
+      href: 'https://donorfamilies.smaht.org/',
+      external: true,
     },
     {
       text: 'Wiki',
@@ -86,10 +92,15 @@ export const footerData = {
     { text: 'Policies', href: getPermalink('/policies') },
   ],
   socialLinks: [
-    { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: 'https://twitter.com/SMaHTnetwork' },
-    // { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    // { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    // { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'Youtube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/@SMaHTnetwork' },
+    // { ariaLabel: 'X', icon: 'tabler:brand-twitter', href: 'https://x.com/SMaHTnetwork' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/smahtnetwork/' },
+    { ariaLabel: 'Linkedin', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/groups/14287460/' },
+    {
+      ariaLabel: 'Facebook',
+      icon: 'tabler:brand-facebook',
+      href: 'https://www.facebook.com/profile.php?id=100091872325711',
+    },
   ],
   footNote: `
     <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm bg-[url(/favicon/favicon-32x32.png)]"></span>
