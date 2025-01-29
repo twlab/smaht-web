@@ -25,6 +25,7 @@ export const headerData = {
       // href: getPermalink('/policies'),
       links: [
         { text: 'Associate Membership Policy', href: getPermalink('/associate-membership') },
+        { text: 'Associate Member Application', href: getPermalink('/associate-application') },
         { text: 'SMaHT Network Code of Conduct', href: getPermalink('code-of-conduct') },
         { text: 'Working Group Governance', href: getPermalink('/policy-working-group-governance') },
         { text: 'Data Use Policy', href: getPermalink('/data-use-policy') },

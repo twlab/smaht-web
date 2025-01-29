@@ -18,8 +18,8 @@ const images = [
         src: '/banner/Linktree_Social.png',
         alt: 'Linktree Social',
         desc: 'Linktree Social',
-        link: '/',
-        external: false
+        link: 'https://linktr.ee/smahtnetwork',
+        external: true
     },
     {
         src:'/banner/News.png',
@@ -46,12 +46,9 @@ export default function MyCarousel() {
                         <div className="flex justify-center p-1">
                             <Card>
                                 <CardContent className="items-center text-center p-2">
-                                    <img src={`/images/${image.src}`} alt={image.alt} className="w-full h-full object-cover" />
-                                    <span className="text-2xl font-semibold">
                                         <a href={image.link} target={image.external ? '_blank' : '_self'} rel="noreferrer" style={{ color: 'rgb(59 130 246)'}}>
-                                        {image.desc}
+                                            <img src={`/images/${image.src}`} alt={image.alt} className="w-full h-full object-cover" />
                                         </a>
-                                        </span>
                                 </CardContent>
                             </Card>
                         </div>
