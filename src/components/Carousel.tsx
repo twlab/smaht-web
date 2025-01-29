@@ -9,27 +9,27 @@ import { Card, CardContent } from "~/components/ui/card"
 
 const images = [
     {
-        src: '/banner/Donor_Families.png',
+        src: 'banner/Donor_Families.png',
         alt: 'Donor Families',
         desc: 'Donor Families',
         link: 'https://donorfamilies.smaht.org/',
         external: true
     },{
-        src: '/banner/Linktree_Social.png',
+        src: 'banner/Linktree_Social.png',
         alt: 'Linktree Social',
         desc: 'Linktree Social',
         link: 'https://linktr.ee/smahtnetwork',
         external: true
     },
     {
-        src:'/banner/News.png',
+        src:'banner/News.png',
         alt: 'News',
         desc: 'News',
         link: '/news',
         external: false
     },
     {
-        src: '/banner/Publications.png',
+        src: 'banner/Publications.png',
         alt: 'Publications',
         desc: 'Publications',
         link: 'https://pubmed.ncbi.nlm.nih.gov/collections/64677812/?sort=pubdate',
