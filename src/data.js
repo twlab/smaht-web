@@ -31,6 +31,7 @@ export const headerData = {
         { text: 'Data Use Policy', href: getPermalink('/data-use-policy') },
         { text: 'Software Policy', href: getPermalink('/software-policy') },
         { text: 'Publication Policy', href: getPermalink('/publication-policy') },
+        { text: 'Privacy Policy', href: getPermalink('/privacy-policy') },
       ],
     },
     // {

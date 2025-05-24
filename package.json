@@ -11,7 +11,9 @@
     "astro": "astro",
     "format": "prettier -w .",
     "lint:eslint": "eslint . --ext .js,.ts,.astro",
-    "subfont": "subfont -ir --no-fallbacks --silent --root dist"
+    "subfont": "subfont -ir --no-fallbacks --silent --root dist",
+    "deploy": "aws s3 sync dist/ s3://smaht.org/ --delete",
+    "postdeploy": "aws cloudfront create-invalidation --distribution-id E1RSJ3P2ECAEXO --paths '/*'"
   },
   "devDependencies": {
     "@astrojs/image": "^0.14.1",
@@ -27,7 +29,6 @@
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "astro": "^2.0.10",
-    "astro-compress": "^1.1.32",
     "astro-icon": "^0.8.1",
     "eslint": "^8.33.0",
     "eslint-plugin-astro": "^0.23.0",
@@ -53,6 +54,7 @@
     "@radix-ui/react-slot": "^1.1.1",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
+    "astro-compress": "^2.3.8",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.5.2",
