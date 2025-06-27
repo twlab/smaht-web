@@ -167,7 +167,7 @@ The following kinds of behaviors in all SMaHT platforms and events are encourage
 
 - Gracefully accepting constructive criticism
 
-- Using welcoming and inclusive language
+- Using welcoming language
 
 - Being direct but professional
 
@@ -175,7 +175,7 @@ The following kinds of behaviors in all SMaHT platforms and events are encourage
 
 - Being sensitive to language differences
 
-- Being aware of the dynamics of power and privilege, especially of how much time and space you are taking up
+- Being aware of the dynamics of power, especially of how much time and space you are taking up
 
 - Respecting confidentiality, especially during closed meeting settings
 
@@ -187,7 +187,7 @@ The following will not be tolerated:
 
 - Bullying
 
-- Discrimination
+- Intolerance
 
 - Disrespectful behavior
 
@@ -195,7 +195,7 @@ The following will not be tolerated:
 
 - Intimidation
 
-- Marginalization of individuals, their ideas, or their contributions
+- Minimization of individuals, their ideas, or their contributions
 
 - Plagiarism
 
