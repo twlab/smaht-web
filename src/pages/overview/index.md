@@ -13,7 +13,7 @@ Core components of the Network include an Organization Center, Tissue Procuremen
 
 <u>Key outcomes of the SMaHT Network include:</u>
 
-* A catalog of somatic variants in select tissues from diverse human donors
+* A catalog of somatic variants in select tissues from many adult donors
 * Innovative sequencing tools and analysis methods that optimize variant detection
 * A SMaHT data workbench that seamlessly integrates with current tools to study DNA sequences, like genome browsers, and combines analysis of somatic variation with the current human eference genome
 * Fundamentally new ways of understanding the contribution of somatic variation to human biology.
