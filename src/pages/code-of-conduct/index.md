@@ -145,9 +145,9 @@ SMaHT Data Portal: [<u>https://data.smaht.org/</u>](https://data.smaht.org/)
 
 ## II\. Code of Conduct
 
-A diverse and inclusive community is essential to achieving our shared scientific goals. Our community members bring with them a wide variety of professional, personal, and social perspectives; whatever these may be, we strive to treat colleagues with dignity and respect.
+A broad and collaborative community is essential to achieving our shared scientific goals. Our community members bring with them a wide variety of professional, personal, and social perspectives; whatever these may be, we strive to treat colleagues with dignity and respect.
 
-The SMaHT Network is committed to providing a harassment-free experience for everyone regardless of physical appearance, sex, gender identity or expression, sexual orientation, (dis)ability, age, race, religion, or national origin.
+The SMaHT Network is committed to providing a harassment-free experience for everyone, regardless of background.
 
 This Code of Conduct (CoC) is our governing policy that reflects SMaHT’s culture and ethical principles of integrity, care, transparency, and accountability. We expect all participants in the SMaHTNetwork to abide by the following Code of Conduct when interacting in physical spaces, digital spaces, and SMaHT-related social media channels.
 
@@ -167,7 +167,7 @@ The following kinds of behaviors in all SMaHT platforms and events are encourage
 
 - Gracefully accepting constructive criticism
 
-- Using welcoming and inclusive language
+- Using welcoming language
 
 - Being direct but professional
 
@@ -175,7 +175,7 @@ The following kinds of behaviors in all SMaHT platforms and events are encourage
 
 - Being sensitive to language differences
 
-- Being aware of the dynamics of power and privilege, especially of how much time and space you are taking up
+- Being aware of the dynamics of power, especially of how much time and space you are taking up
 
 - Respecting confidentiality, especially during closed meeting settings
 
@@ -187,7 +187,7 @@ The following will not be tolerated:
 
 - Bullying
 
-- Discrimination
+- Intolerance
 
 - Disrespectful behavior
 
@@ -195,7 +195,7 @@ The following will not be tolerated:
 
 - Intimidation
 
-- Marginalization of individuals, their ideas, or their contributions
+- Minimization of individuals, their ideas, or their contributions
 
 - Plagiarism
 
