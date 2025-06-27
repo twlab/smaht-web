@@ -17,7 +17,7 @@ Associate Members of the SMaHT Network are qualified individuals eligible to par
 
 Associate Members are expected to contribute to the research goals of the network, which are listed below.
 
-* A catalog of somatic variants in select tissues from diverse human donors
+* A catalog of somatic variants in select tissues from many adult donors
 * Innovative sequencing tools and analysis methods that optimize variant detection
 * SMaHT data workbench seamlessly integrates with current tools to study DNA sequences, like genome browsers, and combines analysis of somatic variation with the current human genome
 
