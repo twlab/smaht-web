@@ -17,3 +17,5 @@ Core components of the Network include an Organization Center, Tissue Procuremen
 * Innovative sequencing tools and analysis methods that optimize variant detection
 * A SMaHT data workbench that seamlessly integrates with current tools to study DNA sequences, like genome browsers, and combines analysis of somatic variation with the current human reference genome
 * Fundamentally new ways of understanding the contribution of somatic variation to human biology.
+
+![SMaHT Initiatives](/images/SMaHTInitiatives.png)
