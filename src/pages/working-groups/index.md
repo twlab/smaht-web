@@ -9,7 +9,7 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 #### Working Group Leads
 
-![](images/people/PeterPark.png)
+![](/images/people/PeterPark.png)
 
 Peter Park
 
@@ -67,7 +67,7 @@ Bob Fulton
 ![](/images/people/SorenGermer.png)
 Soren Germer
 
-![](images/people/PeterPark.png)
+![](/images/people/PeterPark.png)
 Peter Park
 
 ![](/images/people/JimmyBennett.png)
