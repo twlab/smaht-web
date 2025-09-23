@@ -18,6 +18,10 @@ export const headerData = {
           text: 'Awardees',
           href: getPermalink('/awardees'),
         },
+        {
+          text: 'Working Groups',
+          href: getPermalink('/working-groups'),
+        },
       ],
     },
     {

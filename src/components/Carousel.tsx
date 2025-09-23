@@ -9,7 +9,13 @@ import { Card, CardContent } from "~/components/ui/card"
 
 const images = [
     {
-        src: 'banner/Donor_Families.png',
+        src: 'banner/SMaHTMarkerPaperBanner.png',
+        alt: 'SMaHT Marker Paper',
+        desc: 'SMaHT Marker Paper',
+        link: 'https://www.nature.com/articles/s41586-025-09096-7',
+        external: true
+    }, {
+        src: 'banner/DonorFamiliesBannerv2.png',
         alt: 'Donor Families',
         desc: 'Donor Families',
         link: 'https://donorfamilies.smaht.org/',
@@ -39,7 +45,9 @@ const images = [
 
 export default function MyCarousel() {
     return (
-        <Carousel className="w-full">
+        <Carousel className="w-full" opts={{
+            loop: true,
+          }}>
             <CarouselContent>
                 {images.map((image, index) => (
                     <CarouselItem key={index}>
