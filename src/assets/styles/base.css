@@ -160,3 +160,17 @@
 a:hover {
   text-decoration: underline;
 }
+
+.working-group img {
+  max-width: 200px;
+  height: auto;
+}
+
+.people {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 4px;
+}
