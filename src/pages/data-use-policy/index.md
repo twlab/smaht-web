@@ -63,7 +63,9 @@ As defined in Section II, SMaHT data will be classified into two categories: pro
 | De-identified information from a donor’s medical record, such as sex, age group, and cause of death (Hardy Scale) | **Available**  | **Available** |
 | Graphs showing aggregated de-identified information from donor medical records, such as sex, age group, cause of death (Hardy Scale) and family-reported race & ethnicity data | **Available**  | **Available** |
 | Non-inherited (aka somatic) variant data from individual donors | **Available**  | **Available** |
-| Individual-level functional data  Sequence data and variant calls that are aggregated across multiple donors  Inherited (aka germline) variant calls and/or DNA and RNA sequence data from an individual donor | **Available  Available**  Unavailable  | **Available  Available  Available** |
+| Individual-level functional data | **Available**  | **Available** |  
+| Sequence data and variant calls that are aggregated across multiple donors | **Available**  | **Available** |  
+| Inherited (aka germline) variant calls and/or DNA and RNA sequence data from an individual donor | Unavailable  | **Available** |
 | Information from the donor’s medical record that could lead to donor identification, such as health and disease history | Unavailable  | **Available** |
 | Donor and tissue metadata and pathology information from the TPC | Unavailable  | **Available** |
 | Donor-level family-reported race & ethnicity data  | Unavailable  | Unavailable |
