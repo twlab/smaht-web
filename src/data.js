@@ -22,6 +22,10 @@ export const headerData = {
           text: 'Working Groups',
           href: getPermalink('/working-groups'),
         },
+        {
+          text: 'Associate Members',
+          href: getPermalink('/associate-members'),
+        },
       ],
     },
     {
@@ -57,7 +61,8 @@ export const headerData = {
         },
         {
           text: 'SMaHT Preprints',
-          href: getPermalink('/preprints'),
+          href: 'https://connect.biorxiv.org/relate/content/222',
+          external: true,
         },
       ],
     },

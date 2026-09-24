@@ -174,3 +174,12 @@ a:hover {
   justify-content: start;
   margin-bottom: 4px;
 }
+
+.associate-members {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 4px;
+}
