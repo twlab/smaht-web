@@ -368,16 +368,6 @@ Josh Smith
 <div class="people">
 <div>
 
-![](/images/people/MelissaFaith.png)
-
-</div>
-<div>
-Melissa Faith
-</div>
-</div>
-<div class="people">
-<div>
-
 ![](/images/people/RaquelHernandez.png)
 
 </div>

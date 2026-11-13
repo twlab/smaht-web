@@ -9,10 +9,10 @@ import { Card, CardContent } from "~/components/ui/card"
 
 const images = [
     {
-        src: 'banner/SMaHTMarkerPaperBanner.png',
-        alt: 'SMaHT Marker Paper',
-        desc: 'SMaHT Marker Paper',
-        link: 'https://www.nature.com/articles/s41586-025-09096-7',
+        src: 'banner/SMaHTBenchmarkingPaperBanner.png',
+        alt: 'SMaHT Benchmarking Paper featured in Cell',
+        desc: 'SMaHT Benchmarking Paper',
+        link: 'https://www.cell.com/cell/fulltext/S0092-8674%2826%2901135-9',
         external: true
     }, {
         src: 'banner/DonorFamiliesBannerv2.png',

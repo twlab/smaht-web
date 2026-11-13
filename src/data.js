@@ -52,6 +52,20 @@ export const headerData = {
     //   ],
     // },
     {
+      text: 'News',
+      href: getPermalink('/news'),
+    },
+    {
+      text: 'SMaHT Donor Families',
+      href: 'https://donorfamilies.smaht.org/',
+      external: true,
+    },
+    {
+      text: 'Wiki',
+      href: 'https://wiki.smaht.org/',
+      external: true,
+    },
+    {
       text: 'Publications',
       links: [
         {
@@ -65,20 +79,6 @@ export const headerData = {
           external: true,
         },
       ],
-    },
-    {
-      text: 'News',
-      href: getPermalink('/news'),
-    },
-    {
-      text: 'SMaHT Donor Families',
-      href: 'https://donorfamilies.smaht.org/',
-      external: true,
-    },
-    {
-      text: 'Wiki',
-      href: 'https://wiki.smaht.org/',
-      external: true,
     },
   ],
   actions: [{ type: 'button', text: 'Data Portal', href: 'https://data.smaht.org/' }],
