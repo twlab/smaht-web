@@ -1,0 +1,287 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+const meta = { title: 'Awardees' };
+
+// Each awardee row expands to show the institution's logo and description.
+// `logo` is a file in /public/images/institutions; leave it out to show no logo.
+const awardees = [
+  {
+    component: 'Organizational Center',
+    awardee: 'Ting Wang (Contact), Heather Lawson, Lucinda Antonacci-Fulton',
+    institution: 'Washington University',
+    title: 'WashU Somatic Mosaicism across Human Tissues (SMaHT) Program Organizational Center',
+    award: '1U24NS132103',
+    url: 'https://reporter.nih.gov/search/Z1vDwZBdvkyjvODjjlVoKg/projects',
+    logo: 'WashingtonUniversity.png',
+  },
+  {
+    component: 'Tissue Procurement Center',
+    awardee: 'Thomas Bell',
+    institution: 'National Disease Research Interchange',
+    title: 'Tissue Procurement Center (TPC) Supporting the Somatic Mosaicism across Human Tissues (SMaHT) Network',
+    award: '1U24MH133204',
+    url: 'https://reporter.nih.gov/search/BQUA9B2YqE-TTPoa4uhgXQ/projects',
+    logo: 'NDRI.png',
+  },
+  {
+    component: 'Data Analysis Center',
+    awardee: 'Peter Park',
+    institution: 'Harvard University',
+    title: 'Data Analysis Center for Somatic Mosaicism Across Human Tissues Network',
+    award: '1UM1DA058230',
+    url: 'https://reporter.nih.gov/search/Ufwip_0rxkaLQGGmu6ymVg/projects',
+    logo: 'HarvardMedicalSchool.png',
+    description:
+      'The Data Analysis Center (DAC) at Harvard Medical School is the central hub for collecting, processing, and sharing data and metadata from all centers across the Network. The DAC develops standardized pipelines and benchmarks for detecting somatic variants so that results are consistent across centers and sequencing platforms. Through the SMaHT Data Portal, it provides the research community with open access to these data and tools.',
+  },
+  {
+    component: 'Genome Characterization Center',
+    awardee: 'Kirstin Ardlie (Contact), John Niall, and Pradeep Natarajan',
+    institution: 'Broad Institute, Inc.',
+    title: 'Whole Individual Comprehensive KnowlEDge: Somatic Mosaicism across Human Tissues (WICKed SMaHT)',
+    award: 'UM1DA058235',
+    url: 'https://reporter.nih.gov/search/1S7MbpXKJkCFH-m367GUXg/projects',
+    logo: 'BroadInstitute.png',
+  },
+  {
+    component: 'Genome Characterization Center',
+    awardee: 'James Bennett (Contact), Andrew Stergachis, Chia-Lin Wei and Evan Eichler',
+    institution: "University of Washington & Seattle Children's Research Institute",
+    title:
+      'Mosaicism in Human Tissues, from Telomere to Telomere to RFA-22-013: Somatic Mosaicism across Human Tissues Program: Genome Characterization Centers',
+    award: 'UM1DA058220',
+    url: 'https://reporter.nih.gov/search/CcRdHyG0s021h7vMEmF78A/project-details/10662071',
+    logo: 'UW_SeattleChildrens.png',
+  },
+  {
+    component: 'Genome Characterization Center',
+    awardee: 'Nicolas Robine (Contact) and Samuel Aparicio',
+    institution: 'New York Genome Center',
+    title: 'New York Genome Characterization Center: Somatic Mosaicism across Human Tissues',
+    award: 'UM1DA058236',
+    url: 'https://reporter.nih.gov/search/_tmT4GYZ1UW7qJleJqpkzg/projects',
+    logo: 'NYGenomeCenter.png',
+    description:
+      'The New York Genome Center is one of the 5 "Genome Characterization Centers" in SMaHT. They obtain samples from the Tissue Procurement Center and perform the "core assays" (short read whole-genome sequencing and transcriptome sequencing with Illumina, long read sequencing with Oxford Nanopore). In addition, they employ a dual-strand sequencing assay from Ultima Genomics called ppmSeq (paired plus-minus sequencing). They collaborate with some of the "Tool and Technology Development" groups to sequence samples prepared with various protocols and contribute to multiple analyses in the Network to improve the characterization of somatic mosaicism.',
+  },
+  {
+    component: 'Genome Characterization Center',
+    awardee: 'Richard Gibbs, Rui Chen, and Harsha Doddapaneni',
+    institution: 'Baylor College of Medicine',
+    title: 'Comprehensive Somatic Variant Characterization at the HGSC',
+    award: 'UM1DA058229',
+    url: 'https://reporter.nih.gov/search/fepOX1zZ-EaUHH3EyfyYmg/projects',
+    logo: 'BaylorCollegeofMedicine.png',
+  },
+  {
+    component: 'Genome Characterization Center',
+    awardee: 'Ting Wang (Contact), Robert Fulton and Hui Shen',
+    institution: 'Washington University',
+    title: 'WashU-VAI Somatic Mosaicism across Human Tissues (SMaHT) Program Genome Characterization Center',
+    award: 'UM1DA058219',
+    url: 'https://reporter.nih.gov/search/TC49y8dplEi0JId8Bc9FZQ/projects',
+    logo: 'WashingtonUniversity.png',
+  },
+  {
+    component: 'Tool and Technology Development',
+    awardee: 'Alexej Abyzov',
+    institution: 'Mayo Clinic Rochester',
+    title: 'Hybrid approach for comprehensive mutation detection in a cell',
+    award: 'UG3NS132128',
+    url: 'https://reporter.nih.gov/search/2sdtDx6-_USRJFg8bbM0ng/projects',
+    description:
+      "Numerous recent studies have consistently shown that likely no two cells in the human body have the same genomes, a phenomenon called somatic mosaicism. Mosaicism can be studied using various approaches, but the study of mutations directly in the cell promises a comprehensive characterization of mosaicism in any tissue. However, all existing methods have significant limitations for studying the genome in a cell. In our project we develop and test a hybrid approach, which allows comprehensive and accurate analysis of the cell's genomes in various tissues of the human body.",
+  },
+  {
+    component: 'Tool and Technology Development',
+    awardee: 'Kathleen Burns (Contact), Bradley Bernstein, and Alice Eungung Lee',
+    institution: 'Dana-Farber Cancer Institute',
+    title: 'Single molecule detection of L1 insertions and intermediates',
+    award: 'UG3NS132127',
+    url: 'https://reporter.nih.gov/search/SmPjB4qhpEOL5FvhSd939Q/projects',
+    logo: 'DanaFarber.png',
+  },
+  {
+    component: 'Tool and Technology Development',
+    awardee: 'Fei Chen (Contact), Jason Buenrostro, Jason Daniel, and Gad Getz',
+    institution: 'Broad Institute, Inc.',
+    title: 'A Platform for Scalable Spatial Somatic Variant Profiling',
+    award: 'UG3NS132135',
+    url: 'https://reporter.nih.gov/search/z_2NpFa_P0auALE0gDlqwg/projects',
+    logo: 'BroadInstitute.png',
+  },
+  {
+    component: 'Tool and Technology Development',
+    awardee: 'Sangita Choudhury (Contact), Alice Eungung Lee, and Christopher Walsh',
+    institution: "Boston Children's Hospital",
+    title: 'Detection and Characterization of Somatic Mutations in Human Tissue Utilizing Duplex-Consensus Sequencing',
+    award: 'UG3NS132144',
+    url: 'https://reporter.nih.gov/search/ikANyPTjIUqcMQdJXp37uA/projects',
+    logo: 'BostonChildrens.png',
+    description:
+      "Led by Dr. Sangita Choudhury at Boston Children's Hospital and Harvard Medical School, our SMaHT Technology and Tool Development project focuses on advancing highly sensitive, scalable sequencing technologies for detecting and characterizing rare somatic mutations across human tissues. We are developing Tn5-based duplex sequencing (Tn5-duplex-seq), an innovative single-molecule approach that enables accurate detection of low-frequency somatic variants while reducing sequencing costs and input DNA requirements. By integrating duplex-consensus sequencing with optimized experimental and computational workflows, our team aims to improve the accuracy, efficiency, and accessibility of somatic mutation profiling across diverse tissues and cell types. These advances will contribute to the SMaHT Network's mission of building a comprehensive atlas of human somatic mosaicism and understanding how somatic mutations arise and accumulate during development, aging, and disease.",
+  },
+  {
+    component: 'Tool and Technology Development',
+    awardee: 'Gilad Evrony',
+    institution: 'New York University School of Medicine',
+    title: 'Ultra-High Fidelity Single-Molecule Profiling of Mosaic Double- and Single-Strand DNA Mutations and Damage',
+    award: 'UG3NS132024',
+    url: 'https://reporter.nih.gov/search/M4Ky5UIaW0CMw0LJY5nvbg/projects',
+    logo: 'NYUSchoolofMedicine.png',
+    description:
+      'The NYU Tools and Technology Development team is developing new DNA sequencing technology that achieves extremely high fidelity when profiling single molecules of DNA. This enables detection of DNA mutations, base pair mismatches, and damage with the goal of understanding the origins of mutations.',
+  },
+  {
+    component: 'Tool and Technology Development',
+    awardee: 'Thomas Fazzio (Contact) and Manuel Garber',
+    institution: 'University of Massachusetts Medical School Worcester',
+    title:
+      'varCUT&Tag: A Method for Simultaneous Identification and Characterization of Sequence Variants in Regulatory Elements and Genes',
+    award: 'UG3NS132136',
+    url: 'https://reporter.nih.gov/search/j2BWbhT4e0mAyptBadWarg/projects',
+    logo: 'UMassMedicalSchool.png',
+    description:
+      'The UMass Chan Medical School TTD is developing new tools for identification and functional annotation of somatic variants in gene regulatory regions. We have developed a method called varCUT&Tag that enriches for regulatory regions, enabling identification of rare variants, while also allowing the functional impact of regulatory variants to be inferred. Our approach facilitates the process of screening through non-coding variants for those with potential functional consequences, which can then be prioritized for additional analyses.',
+  },
+  {
+    component: 'Tool and Technology Development',
+    awardee: 'Fulai Jin (Contact) and Yan Li',
+    institution: 'Case Western Reserve University',
+    title: 'Simultaneous mapping of somatic mosaicism and kb-resolution 3D genome in single cells',
+    award: 'UG3NS132061',
+    url: 'https://reporter.nih.gov/search/mKawhl2vckGFWsnJdgkJFQ/projects',
+    logo: 'CaseWestern.png',
+    description:
+      "The Case Western Reserve University team, led by Drs. Fulai Jin and Yan Li, develops single-cell genomic and computational tools to connect somatic mutations with their cellular context. Through SMaHT's Tool and Technology Development program, the team established a Dip-C–based approach that simultaneously profiles somatic DNA variation and three-dimensional genome organization in the same nucleus. This approach combines mutation detection, computational cell-type identification, and haplotype phasing to characterize rare mutations and chromosomal alterations within complex human tissues. Building on this work, the team continues to develop and apply these methods in human pancreatic islets to investigate how somatic mutations influence cellular fitness during aging and in diabetes, advancing SMaHT's goal of understanding the biological consequences of somatic mosaicism.",
+  },
+  {
+    component: 'Tool and Technology Development',
+    awardee: 'Dan Landau (Contact) and Rahul Satija',
+    institution: 'Weill Medical College of Cornell University',
+    title:
+      'Single-Cell Multi-omics to Link Clonal Mosaicism (CM) Genotypes with Chromatin, Epigenomic, Transcriptomic and Protein Phenotypes',
+    award: 'UG3NS132139',
+    url: 'https://reporter.nih.gov/search/5FDD7Tlc0Ear3mbEpdZRPw/projects',
+    logo: 'WeillCornell.png',
+  },
+  {
+    component: 'Tool and Technology Development',
+    awardee: 'Gabor Marth (Contact) and Hunter Underhill',
+    institution: 'University of Utah',
+    title: 'A reference-free computational algorithm for comprehensive somatic mosaic mutation detection',
+    award: 'UG3NS132134',
+    url: 'https://reporter.nih.gov/search/2Js2f56L3EyyeX5KVpz_Ag/projects',
+    logo: 'UniversityofUtah.png',
+  },
+  {
+    component: 'Tool and Technology Development',
+    awardee: 'Ryan Mills (Contact), Alan Boyle, and Michael McConnell',
+    institution: 'University of Michigan Ann Arbor',
+    title: 'Molecular and Computational Tools for Identifying Somatic Mosaicism in Human Tissues',
+    award: 'UG3NS132084',
+    url: 'https://reporter.nih.gov/search/3CIK6QOlVUmmRffxzxD9Cw/projects',
+    logo: 'UniversityofMichigan.png',
+  },
+  {
+    component: 'Tool and Technology Development',
+    awardee: 'Fritz Sedlazeck (Contact) and Tao Wu',
+    institution: 'Baylor College of Medicine',
+    title:
+      'Identification of somatic/ mosaic SV and transposon activity and their crosstalk to DNA epigenetic Modifications',
+    award: 'UG3NS132105',
+    url: 'https://reporter.nih.gov/search/3lX5NIPrRUyAS0UIubGs0A/projects',
+    logo: 'BaylorCollegeofMedicine.png',
+  },
+  {
+    component: 'Tool and Technology Development',
+    awardee: 'Alexander Urban',
+    institution: 'Stanford University',
+    title:
+      'Establishing and benchmarking advanced methods to comprehensively characterize somatic genome variation in single human cells',
+    award: 'UG3NS132146',
+    url: 'https://reporter.nih.gov/search/FPaJwQDxcUCF3e0F4R07mg/projects',
+    logo: 'Stanford.png',
+  },
+  {
+    component: 'Tool and Technology Development',
+    awardee: 'Christopher Walsh (Contact) and Peter Park',
+    institution: "Boston Children's Hospital",
+    title:
+      'Development of an Efficient High Throughput Technique for the Identification of High-Impact Non-Coding Somatic Variants Across Multiple Tissue Types',
+    award: 'UG3NS132138',
+    url: 'https://reporter.nih.gov/search/k6349gvQ306pH-tHWoH9fQ/projects',
+    logo: 'BostonChildrens.png',
+  },
+  {
+    component: 'Tool and Technology Development',
+    awardee: 'Chenghang Zong',
+    institution: 'Baylor College of Medicine',
+    title:
+      'Develop accurate high-coverage and high-throughput single-cell Duplex-seq chemistry and multi-omics platforms for simultaneous profiling of somatic mutation and the transcriptome in single human cells',
+    award: 'UG3NS132132',
+    url: 'https://reporter.nih.gov/search/zKjvlITUGEytz3hEsg4gcQ/projects',
+    logo: 'BaylorCollegeofMedicine.png',
+  },
+];
+
+const cols = 'md:grid md:grid-cols-[1.1fr_1.4fr_1.3fr_2fr_1fr_1.25rem] md:gap-4';
+---
+
+<Layout {meta}>
+  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-6xl">
+    <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter">Awardees</h1>
+    <p class="mt-8 text-lg">
+      The following table details the awardees for the SMaHT Network. Select a row to learn more about each awardee.
+    </p>
+
+    <div class="mt-6 text-sm md:text-base">
+      <div class={`hidden ${cols} font-semibold border-b-2 border-gray-300 dark:border-slate-600 pb-2`}>
+        <div>Component</div>
+        <div>Awardee</div>
+        <div>Institution</div>
+        <div>Title</div>
+        <div>Award Number</div>
+        <div></div>
+      </div>
+      {
+        awardees.map((a) => (
+          <details class="awardee group border-b border-gray-200 dark:border-slate-700">
+            <summary class={`${cols} grid grid-cols-1 gap-1 py-3 cursor-pointer list-none hover:bg-blue-50 dark:hover:bg-slate-800`}>
+              <div class="font-semibold md:font-normal">{a.component}</div>
+              <div>{a.awardee}</div>
+              <div>{a.institution}</div>
+              <div>{a.title}</div>
+              <div>
+                <a href={a.url} target="_blank" rel="noopener" class="text-blue-600 dark:text-blue-400 underline">
+                  {a.award}
+                </a>
+              </div>
+              <div class="hidden md:block text-gray-400 transition-transform group-open:rotate-180" aria-hidden="true">
+                ▾
+              </div>
+            </summary>
+            <div class="flex flex-col sm:flex-row gap-6 items-start sm:items-center pb-6 pt-2">
+              {a.logo && (
+                <img
+                  src={`/images/institutions/${a.logo}`}
+                  alt={`${a.institution} logo`}
+                  class="w-28 h-28 object-contain flex-shrink-0"
+                  loading="lazy"
+                />
+              )}
+              {a.description && <p class="text-base">{a.description}</p>}
+            </div>
+          </details>
+        ))
+      }
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .awardee summary::-webkit-details-marker {
+    display: none;
+  }
+</style>

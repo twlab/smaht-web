@@ -4,10 +4,10 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
 import { YouTube } from '@astro-community/astro-embed-youtube';
 import MyCarousel from "~/components/Carousel";
+import VideoCarousel from "~/components/VideoCarousel";
 const meta = {
   title: SITE.title,
   description: SITE.description,
@@ -32,17 +32,17 @@ const meta = {
     </Fragment>
   </Hero> -->
   <section class="scroll-mt-16">
-    <div class="px-4 py-4 mx-auto max-w-6xl lg:px-8 lg:py-8">
-          <MyCarousel client:load />
-        </div>
+    <div class="px-14 py-3 mx-auto max-w-4xl lg:py-4">
+      <MyCarousel client:load />
+    </div>
   </section>
 
   <section class="scroll-mt-16">
-    <div class="px-4 py-4 mx-auto max-w-6xl lg:px-8 lg:py-8">
-      <div class="grid mx-auto space-y-6 md:grid-cols-2 md:space-y-0">
+    <div class="px-4 py-4 mx-auto max-w-5xl lg:px-8 lg:py-6">
+      <div class="grid mx-auto gap-6 md:grid-cols-2 items-center">
         <div>
-          <h1 class="text-3xl py-4 font-bold">Welcome to the SMaHT Network!</h1>
-          <p class="text-lg">
+          <h1 class="text-2xl pb-3 font-bold">Welcome to the SMaHT Network!</h1>
+          <p class="text-base">
             The <a href="https://commonfund.nih.gov/smaht" target="_blank" class="text-blue-500 underline"
               >Somatic Mosaicism Across Human Tissues <span class="text-accent dark:text-white highlight">(SMaHT)</span
               ></a
@@ -73,43 +73,26 @@ const meta = {
 
   <!-- Features Widget *************** -->
 
-  <Features
-    highlight=""
-    title="Key Outcomes"
-    subtitle=""
-    items={[
-      [
-        {
-          title: 'Catalog of variants',
-          description: 'A catalog of somatic variants in select tissues from human donors',
-          icon: 'tabler:components',
-        }],[
-        {
-          title: 'New tools and analysis methods',
-          description:
-            'Innovative sequencing tools and analysis methods that optimize variant detection',
-          icon: 'tabler:bulb',
-        },
-      ],
-        [
-        {
-          title: 'Comprehensive resources',
-          description:
-            'Fundamentally new ways of understanding the contribution of somatic variation to human biology',
-          icon: 'tabler:arrows-right-left',
-        },
-      ],
-      [
-        {
-          title: 'A SMaHT data workbench',
-          description: 'A SMaHT data workbench that seamlessly integrates with current tools to study DNA sequences, like genome browsers, and combines analysis of somatic variation with the current human eference genome',
-          icon: 'tabler:list-check',
-        }],
-    ]}
-  />
+  <section class="scroll-mt-16 bg-blue-50 dark:bg-slate-800" id="key-outcomes">
+    <div class="px-4 py-6 mx-auto max-w-5xl lg:px-8">
+      <img
+        src="/images/SMaHTKeyOutcomes.png"
+        alt="Key Outcomes: a catalog of somatic variants in select tissues from human donors; innovative sequencing tools and analysis methods that optimize variant detection; fundamentally new ways of understanding the contribution of somatic variation to human biology; and a SMaHT data workbench that integrates with current tools to study DNA sequences, like genome browsers, and combines analysis of somatic variation with the current human reference genome"
+        class="w-full h-auto rounded-md"
+        loading="lazy"
+      />
+    </div>
+  </section>
 
   <section class="scroll-mt-16">
-    <h2 class="text-3xl py-4 font-bold text-center">Follow us on Bluesky</h2>
+    <div class="px-14 py-6 mx-auto max-w-5xl">
+      <h2 class="text-2xl pb-4 font-bold text-center">Meet the SMaHT Network</h2>
+      <VideoCarousel client:visible />
+    </div>
+  </section>
+
+  <section class="scroll-mt-16 pb-6">
+    <h2 class="text-2xl py-4 font-bold text-center">Follow us on Bluesky</h2>
     <bsky-embed
     username="smahtnetwrk.bsky.social"
     limit="2"
