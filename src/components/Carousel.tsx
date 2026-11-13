@@ -15,6 +15,12 @@ const images = [
         link: 'https://www.cell.com/cell/fulltext/S0092-8674%2826%2901135-9',
         external: true
     }, {
+        src: 'banner/SMaHTP25Banner.png',
+        alt: 'P25 Flagship Manuscript: Accurate Detection of Sub-1% Frequency Somatic Mutations By Whole-Genome Sequencing',
+        desc: 'P25 Flagship Manuscript',
+        link: 'https://www.cell.com/ajhg/fulltext/S0002-9297(26)00350-2',
+        external: true
+    }, {
         src: 'banner/DonorFamiliesBannerv2.png',
         alt: 'Donor Families',
         desc: 'Donor Families',
